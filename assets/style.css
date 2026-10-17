@@ -20,3 +20,73 @@
 .referee-list{margin:0;padding-left:1.25em}.referee-list li+li{margin-top:6px}
 
 .affiliation{max-width:none}.institution-link{display:inline-flex;align-items:center;gap:8px}.fed-symbol{display:block;width:28px;height:28px;flex:0 0 28px;background:#0c3b5d;border-radius:50%;padding:2px}.institution-link span{max-width:340px}
+
+/* Compact academic layout */
+html{scroll-padding-top:80px}
+body{line-height:1.5}
+header{height:62px}
+.hero{min-height:0;max-width:1240px;grid-template-columns:minmax(0,1fr) 220px;padding:32px 6%;gap:40px}
+.hero h1{font-size:56px;line-height:1.1;margin-bottom:12px}
+.hero h1 br{display:none}
+.hero .eyebrow{margin-bottom:10px}
+.hero .position{font-size:18px}
+.hero .actions{margin-top:16px}
+.portrait-wrap{width:100%;max-width:220px;margin:0;justify-self:end}
+.portrait-wrap img{display:block}
+.page-top{padding:22px max(6%,calc((100vw - 1090px)/2))}
+.page-top .eyebrow{margin-bottom:6px}
+.page-top h2{font-size:32px;margin-bottom:5px}
+.page-top>p:last-child{font-size:14px}
+.section{padding:28px 6%}
+.paper{grid-template-columns:30px minmax(0,1fr);gap:14px;padding-bottom:20px;margin-bottom:20px;scroll-margin-top:80px}
+.paper:last-child{margin-bottom:0}
+.paper-number{font-size:16px}
+.paper .eyebrow{margin-bottom:6px;font-size:11px}
+.paper h3{font-size:21px;line-height:1.3;letter-spacing:-.02em}
+.authors,.journal,.draft-note{margin-top:6px}
+.abstract{margin-top:8px}
+.abstract p{margin-top:10px}
+.paper .actions{margin-top:10px;gap:12px}
+.button{padding:8px 16px}
+.courses{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:36px}
+.courses li{grid-template-columns:1fr;gap:4px;padding:14px 0;align-content:start}
+.courses .term{padding-top:0}
+.courses .eyebrow{margin-bottom:3px}
+.courses h3{font-size:19px;line-height:1.3;letter-spacing:-.02em}
+.courses p:last-child{margin-top:4px}
+.one-page-about{max-width:1240px}
+.one-page-about>div{max-width:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:36px;row-gap:18px}
+.one-page-about>div>p{grid-column:1/-1}
+.one-page-about>div>p:first-child{margin-bottom:0!important}
+.info{margin-top:0;padding-top:14px}
+.info h3,.one-page-about .info h3{font-size:17px;margin-bottom:8px}
+.experience-entry+.experience-entry{margin-top:12px}
+.experience-dates{margin-top:3px}
+.referee-list li+li{margin-top:3px}
+footer{padding:24px 6%}
+.foot-top{margin-bottom:12px}
+@media(max-width:850px){
+.hero{grid-template-columns:minmax(0,1fr) 180px;gap:24px}
+.hero h1{font-size:48px}
+.courses,.one-page-about>div{column-gap:24px}
+}
+@media(max-width:620px){
+header{height:60px}
+.hero{padding:24px 6%;grid-template-columns:minmax(0,1fr) 100px;gap:16px;align-items:start}
+.hero h1{font-size:38px;line-height:1.1}
+.hero h1 br{display:none}
+.hero .position{font-size:16px}
+.hero .affiliation{font-size:14px}
+.hero .eyebrow{font-size:10px}
+.hero .actions{gap:8px}
+.portrait-wrap{max-width:100px}
+.page-top{padding:20px 6%}
+.page-top h2{font-size:28px}
+.section{padding:24px 6%}
+.paper{grid-template-columns:22px minmax(0,1fr);gap:10px;padding-bottom:18px;margin-bottom:18px}
+.paper h3{font-size:19px}
+.courses,.one-page-about>div{grid-template-columns:1fr}
+.courses li{padding:12px 0}
+.one-page-about>div{row-gap:16px}
+.institution-link{align-items:flex-start}
+}
